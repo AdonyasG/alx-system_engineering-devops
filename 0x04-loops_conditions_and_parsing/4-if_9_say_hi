@@ -4,12 +4,10 @@
 i=1; while  [ $i -le 10 ]
 do
 	echo "Best School"
-	i=$(( i + 1 ))
-	if (i=9)
+	if [ $i -eq 9 ]
 	then
-		break
+		echo "Hi"
 	fi
-	echo ("Hi")
+	i=$(( i + 1 ))
 done
-# alternative way
-# i=0; while (( i < 10)); do echo "Best School"; (( i++ )); done
+
