@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times'
 
-until i = 10
+i=1; until [ $i -gt 10 ]
 do
 	echo "Best School"
+	i=$(( i+1 ))
 done
 # alternative way
-# i=0; while (( i < 10)); do echo "Best School" (( i++ )); done
+# i=0; until (( i == 10)); do echo "Best School"; (( i++ )); done
