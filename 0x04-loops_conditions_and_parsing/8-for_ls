@@ -5,6 +5,5 @@
 # Where only the part of the name after the first dash is displayed.
 
 for i in *; do
-#	printf '%s\n' "$i"
 	echo "$i" | cut -d "-" -f2
 done
