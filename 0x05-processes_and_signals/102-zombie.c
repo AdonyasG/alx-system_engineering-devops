@@ -1,6 +1,6 @@
-#include <unistd.h> /* sleep */
-#include <stdlib.h> /* exit */
-#include <stdio.h> /* printf */
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * infinite_while - create infinite sleep loop
