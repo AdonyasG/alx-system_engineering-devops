@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#  questions about UDP and TCP ports
+netstat -lp
