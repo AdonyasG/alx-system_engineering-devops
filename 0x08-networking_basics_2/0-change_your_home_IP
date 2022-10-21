@@ -3,6 +3,6 @@
 # localhost resolves to 127.0.0.2
 # facebook.com resolves to 8.8.8.8
 
-cp /etc/localhosts hosts_new
-sed -i s/127.*$/127.0.0.2\\tlocalhost\\n8.8.8.8\\tfacebook.com/g hosts_new
-cp -f hosts_new /etc/hosts
+cp /etc/localhosts ~/hosts_new
+sed -i '/127/ i 127.0.0.2 localhost\n8.8.8.8 facebook.com' ~/hosts_new
+cp -f ~/hosts_new /etc/hosts
