@@ -14,4 +14,4 @@ sudo sed -i "30i $REDIRECT" /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
 sudo sed -i "/server_name _;/a $CUSTOM_404" /etc/nginx/sites-available/default
 
-sudo service nginx start
+sudo service nginx restart
