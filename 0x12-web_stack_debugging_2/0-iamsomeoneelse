@@ -1,2 +1,4 @@
-#!/usr/bin/bash
-id -un $1
+#!/usr/bin/env bash
+# runs whomai under given username
+
+id -un "$1"
