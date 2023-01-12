@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # runs whomai under given username
-
-id -un "$1"
+if [ "$#" -eq 0 ]
+then
+	whoami
+else
+	id -un "$1"
+fi
