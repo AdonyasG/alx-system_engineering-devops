@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 """
 Requests Data From API
 """
