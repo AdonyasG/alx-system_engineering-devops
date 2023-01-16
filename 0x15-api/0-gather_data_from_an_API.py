@@ -8,8 +8,7 @@ import requests
 from sys import argv
 
 
-def information():
-    """return info from api"""
+if __name__ == "__main__":
     r = requests.get("https://jsonplaceholder.typicode.com/users")
     todo = requests.get("https://jsonplaceholder.typicode.com/todos")
     data = r.text
@@ -34,7 +33,3 @@ def information():
                                                           TOTAL_NUM_OF_TASKS))
     for i in TASK_TITLE:
         print("\t {}".format(i))
-
-
-if __name__ == "__main__":
-    information()
