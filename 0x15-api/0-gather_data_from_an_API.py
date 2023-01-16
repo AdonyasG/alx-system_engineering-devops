@@ -18,7 +18,7 @@ def information():
     parses = json.loads(datas)
     TOTAL_NUM_OF_TASKS = 0
     TASK_TITLE = []
-    NUMBER_OF_DONE_TASKS = 1
+    NUMBER_OF_DONE_TASKS = 0
     for i in parse:
         if i.get('id') == int(argv[1]):
             EMPLOYEE_NAME = (i.get('name'))
@@ -33,7 +33,7 @@ def information():
                                                           NUMBER_OF_DONE_TASKS,
                                                           TOTAL_NUM_OF_TASKS))
     for i in TASK_TITLE:
-        print("\t", i)
+        print("\t {}".format(i))
 
 
 if __name__ == "__main__":
