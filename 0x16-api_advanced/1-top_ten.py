@@ -3,7 +3,6 @@
 Requests Data From API
 """
 
-import json
 import requests
 
 
