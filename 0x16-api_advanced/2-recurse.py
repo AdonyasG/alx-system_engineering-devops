@@ -22,11 +22,10 @@ def recurse(subreddit, hot_list=[], after="aft"):
     response = requests.get(url, headers=headers, allow_redirects=False)
     post = response.json().get('data', {}).get('children', [])
 
-    if post:
-        for i in post:
-            hot_list.append(i.get('data').get('title'))
-    else:
+    if not post:
         return hot_list
+    for i in post:
+        hot_list.append(i.get('data').get('title'))
 
     after = response.json().get('data').get('after')
 
