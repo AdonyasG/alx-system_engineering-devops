@@ -8,7 +8,7 @@ import requests
 
 def top_ten(subreddit):
     """find number of subscribers"""
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
 
     headers = requests.utils.default_headers()
     headers.update(
