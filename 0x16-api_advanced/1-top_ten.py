@@ -23,4 +23,4 @@ def top_ten(subreddit):
         for i in post:
             print(i.get('data').get('title'))
     else:
-        pri
+        print(None)
