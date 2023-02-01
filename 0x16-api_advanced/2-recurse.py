@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""
+Requests Data from an API
+"""
 
 import requests
-import sys
 
 
 def recurse(subreddit, hot_list=[], after=None):
